@@ -35,41 +35,6 @@ const reorder = (list: ITodo[], startIndex: number, endIndex: number) => {
 	return result
 }
 
-// const AdminList = () => {
-// 	const { data } = useGetList("todos")
-
-// 	const [list, setList] = useState(
-// 		data?.map((item) => ({ ...item, id: `${item.id}` })) || []
-// 	)
-
-// 	useEffect(() => {
-// 		console.log("list", list)
-// 	}, [list])
-
-// 	const handleDragEnd = ({ destination, source }: DropResult) => {
-// 		if (!destination) return
-
-// 		setList(reorder(list, source.index, destination.index))
-// 	}
-
-// 	return (
-// 		<List>
-// 			<DraggableList
-// 				list={list}
-// 				onDragEnd={handleDragEnd}
-// 				dragItemStyle={{
-// 					background: "pink",
-// 					borderRadius: "16px",
-// 				}}
-// 				dragListStyle={{
-// 					background: "lightblue",
-// 					borderRadius: "16px",
-// 				}}
-// 			/>
-// 		</List>
-// 	)
-// }
-
 const AdminApp = () => {
 	const [list, setList] = useState(todoList)
 

@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import { DragDropContext, Droppable, DropResult } from "@hello-pangea/dnd"
-import { ITodo } from "@/interfaces/interfaces"
+import { ITodo } from "@/interfaces/interfaces" // Вызывала конйликт, не давала устанавливать redux
 import DraggableField from "./DraggableField"
 
 interface IDraggableListProps {

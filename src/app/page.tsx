@@ -1,9 +1,16 @@
-import Image from "next/image"
+"use client"
+import Header from "@/components/Header/Header"
+import WrapperWithHeader from "@/components/Wrapper/WrapperWithHeader"
+import { Text, useColorMode } from "@chakra-ui/react"
 
 export default function Home() {
+	const { colorMode, toggleColorMode } = useColorMode()
+
 	return (
 		<main className="">
-			<h2>Hello</h2>
+			<WrapperWithHeader>
+				<Text className="">Hello!!!!!!!</Text>
+			</WrapperWithHeader>
 		</main>
 	)
 }

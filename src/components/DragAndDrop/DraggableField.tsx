@@ -1,6 +1,6 @@
 "use client"
 import React, { PropsWithChildren } from "react"
-import { Draggable } from "@hello-pangea/dnd"
+import { Draggable } from "@hello-pangea/dnd" // Вызывала конйликт, не давала устанавливать redux
 import { ITodo } from "@/interfaces/interfaces"
 
 interface IDraggableFieldProps extends PropsWithChildren {
