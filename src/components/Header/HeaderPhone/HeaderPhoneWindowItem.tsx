@@ -18,10 +18,15 @@ const HeaderPhoneWindowItem: React.FC<HeaderPhoneWindowItemProps> = ({
 					<IconPhone sizes="size-5" />
 				</Box>
 				<Box className="ml-[0px]">
-					<Text as="h3" className="text-xl font-bold mr-1">
+					<Text
+						as="h3"
+						className="lg:text-sm xl:text-lg font-bold mr-1"
+					>
 						{phone}
 					</Text>
-					<Text className="text-sm text-header max-w-40">{text}</Text>
+					<Text className="lg:text-sm xl:text-sm text-header max-w-40">
+						{text}
+					</Text>
 				</Box>
 			</Box>
 		</Box>

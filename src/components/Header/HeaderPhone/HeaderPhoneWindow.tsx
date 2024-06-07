@@ -28,7 +28,7 @@ const HeaderPhoneWindow: React.FC<HeaderPhoneWindowProps> = ({
 
 	return (
 		<Box
-			className={`w-[300px] absolute -top-5 -left-[60px] py-5 px-5 rounded-lg bg-white ${showPhoneWindow} ${
+			className={`w-[270px] absolute -top-5 -left-[60px] py-5 px-5 rounded-lg bg-white ${showPhoneWindow} ${
 				showPhoneWindow === "visible" ? "opacity-100" : "opacity-0"
 			} duration-300`}
 			onMouseLeave={() => {

@@ -18,7 +18,7 @@ const HeaderPhone = () => {
 				className="flex items-center"
 				onMouseEnter={() => handleChangeShowPhoneWindow("visible")}
 			>
-				<Text as="h3" className="text-xl font-bold mr-1">
+				<Text className="lg:text-sm xl:text-lg font-bold mr-1">
 					044 502 70 20
 				</Text>
 				<ChevronDownIcon />

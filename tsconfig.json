@@ -27,7 +27,8 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		"src/components/DragAndDrop/DraggableList.tsx",
-		"src/components/AdminApp/AdminApp1.tsx"
+		"src/components/AdminApp/AdminApp1.tsx",
+		"next-i18next.config.js"
 	],
 	"exclude": ["node_modules"]
 }
