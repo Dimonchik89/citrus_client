@@ -4,6 +4,7 @@ import Image from "next/image"
 import HeaderPhone from "./HeaderPhone/HeaderPhone"
 import Link from "next/link"
 import Headerlanguage from "./Headerlanguage"
+import HeaderMenu from "./HeaderMenu/HeaderMenu"
 
 const HeaderFirstLine = () => {
 	return (
@@ -19,12 +20,11 @@ const HeaderFirstLine = () => {
 						/>
 					</Link>
 					<Box className="flex-1">
-						<ul></ul>
+						<HeaderMenu />
 					</Box>
-
 					<Box className="flex items-center">
 						<HeaderPhone />
-						<Box className="ml-8">
+						<Box className="lg:ml-4 xl:ml-8">
 							<Headerlanguage />
 						</Box>
 					</Box>

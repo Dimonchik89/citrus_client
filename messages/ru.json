@@ -1,5 +1,34 @@
 {
 	"Index": {
 		"title": "Привет!"
+	},
+	"Navigation": {
+		"plushki": "ЦеПлюшки",
+		"obmen": "Цитрус Обмен",
+		"about": "Клиентам",
+		"poslugi": "Услуги",
+		"shares": "Акции",
+		"news": "Новости",
+		"support": "Служба поддержки"
+	},
+	"SubTitleAbout": {
+		"about": "Клиєнтам",
+		"b2b": "Безналичный расчет",
+		"youtube": "Видеообзоры",
+		"gift-certificates": "Подырочные карты",
+		"citrus-novapay": "Оплата з NovaPay",
+		"stores": "Магазины",
+		"dostavka": "Доставка",
+		"garantiya_i_servis": "Гарантия и обмен",
+		"oplata": "Оплата",
+		"poluchenie-posylki": "Получение посылки",
+		"instructions": "Инструкции и прошивки",
+		"deklaraciya-sootvetstviy": "Декларация соответствия"
+	},
+	"SubTitlePoslugi": {
+		"poslugi": "Услуги",
+		"citrus-master-service": "Цитрус Мастер",
+		"citrus-defence": "Цитрус Защита",
+		"kupit-v-kredit": "Цитрус Кредиты"
 	}
 }

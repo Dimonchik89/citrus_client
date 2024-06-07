@@ -5,3 +5,7 @@
 .small_text {
 	@apply text-center text-sm text-header;
 }
+
+.header__link {
+	@apply lg:text-xs xl:text-base;
+}

@@ -1,4 +1,5 @@
 "use client"
+import ModalLocation from "@/components/Modal/ModalLocation"
 import WrapperWithHeader from "@/components/Wrapper/WrapperWithHeader"
 import { Text, useColorMode } from "@chakra-ui/react"
 import { useTranslations } from "next-intl"
@@ -11,6 +12,7 @@ export default function Home() {
 			<WrapperWithHeader>
 				<Text className="">{t("title")}</Text>
 			</WrapperWithHeader>
+			<ModalLocation />
 		</main>
 	)
 }

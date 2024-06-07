@@ -76,9 +76,9 @@ const theme: ThemeOverride = extendTheme({
                     fontSize: "1rem",
                     border: "1px solid orange"
                 },
-                brand: {
-                    colors: "orange"
-                }
+                // link: {
+                //     colors: "orange"
+                // }
             }
         }
     },

@@ -5,3 +5,8 @@ export interface ITodo {
     completed?: boolean,
     userId?: number
 }
+
+export interface SubMenuItem {
+    href: string
+    name: string
+}
