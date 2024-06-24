@@ -1,4 +1,5 @@
 import React, { PropsWithChildren } from "react"
+
 import Header from "../Header/Header"
 
 interface WrapperWithHeaderProps extends PropsWithChildren {}

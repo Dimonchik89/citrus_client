@@ -1,5 +1,6 @@
-import WrapperWithHeader from "@/components/Wrapper/WrapperWithHeader"
 import React from "react"
+
+import WrapperWithHeader from "@/components/Wrapper/WrapperWithHeader"
 
 const page = () => {
 	return (

@@ -1,12 +1,17 @@
 export interface ITodo {
-    id: string,
-    title: string,
-    order?: number,
-    completed?: boolean,
-    userId?: number
+	id: string
+	title: string
+	order?: number
+	completed?: boolean
+	userId?: number
 }
 
 export interface SubMenuItem {
-    href: string
-    name: string
+	href: string
+	name: string
+}
+
+export interface ModalLocationLinks {
+	title: string
+	isShop: boolean
 }

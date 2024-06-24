@@ -1,3 +1,3 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react"
 
-export interface ProviderProps extends PropsWithChildren { }
+export interface ProviderProps extends PropsWithChildren {}

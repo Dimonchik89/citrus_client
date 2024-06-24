@@ -1,9 +1,9 @@
 import { usePathname } from "next/navigation"
 
 const useGetLanguage = () => {
-    const pathname = usePathname()
-    const currentLanguage = pathname.split("/")[1]
+	const pathname = usePathname()
+	const currentLanguage = pathname.split("/")[1]
 
-    return { currentLanguage }
+	return { currentLanguage }
 }
-export default useGetLanguage;
+export default useGetLanguage

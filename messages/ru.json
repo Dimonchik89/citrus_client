@@ -30,5 +30,39 @@
 		"citrus-master-service": "Цитрус Мастер",
 		"citrus-defence": "Цитрус Защита",
 		"kupit-v-kredit": "Цитрус Кредиты"
+	},
+	"LocationModal": {
+		"title": "Выберите ваш город",
+		"zhytomyr": "Житомир",
+		"cherson": "херсон",
+		"chernihiv": "Чернигов",
+		"ternopil": "тернопіль",
+		"kharkiv": "Харків",
+		"lutsk": "Луцк",
+		"rivne": "ровно",
+		"odesa": "Одесса",
+		"uzhhorod": "Ужгород",
+		"kropyvnytskyi": "кропивницкий",
+		"chernivtsi": "Черновцы",
+		"cherkasy": "Черкаси",
+		"lviv": "Львов",
+		"zaporizhia": "Запорожье",
+		"chornomorsk": "Черноморск",
+		"sumy": "Сумы",
+		"poltava": "Полтава",
+		"kryvyi_rih": "Кривой Рог",
+		"ivano_frankivsk": "Ивано-Франковск",
+		"dnipro": "Днепр",
+		"izmail": "Измаил",
+		"mykolaiv": "Николаев",
+		"kyiv": "Киев",
+		"pavlohrad": "Павлоград",
+		"vinnytsia": "Винница",
+		"khmelnytskyi": "Хмельницкий",
+		"bila_tserkva": "Белая Церковь",
+		"placeholder": "Ваш город"
+	},
+	"login": {
+		"comeIn": "войти"
 	}
 }

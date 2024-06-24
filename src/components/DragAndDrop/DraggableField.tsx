@@ -1,7 +1,11 @@
 "use client"
+
 import React, { PropsWithChildren } from "react"
-import { Draggable } from "@hello-pangea/dnd" // Вызывала конйликт, не давала устанавливать redux
+
 import { ITodo } from "@/interfaces/interfaces"
+import { Draggable } from "@hello-pangea/dnd"
+
+// Вызывала конйликт, не давала устанавливать redux
 
 interface IDraggableFieldProps extends PropsWithChildren {
 	item: ITodo
@@ -12,11 +16,7 @@ interface IDraggableFieldProps extends PropsWithChildren {
 	}
 }
 
-const DraggableField = ({
-	item,
-	index,
-	dragItemStyle,
-}: IDraggableFieldProps) => {
+const DraggableField = ({ item, index, dragItemStyle }: IDraggableFieldProps) => {
 	return (
 		<Draggable index={index} draggableId={item.id}>
 			{(provided, snapshot) => (

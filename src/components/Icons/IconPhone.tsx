@@ -6,14 +6,7 @@ interface IconPhoneProps {
 
 const IconPhone: React.FC<IconPhoneProps> = ({ sizes = "size-6" }) => {
 	return (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			fill="none"
-			viewBox="0 0 24 24"
-			strokeWidth="1.5"
-			stroke="gray"
-			className={`${sizes}`}
-		>
+		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="gray" className={`${sizes}`}>
 			<path
 				strokeLinecap="round"
 				strokeLinejoin="round"

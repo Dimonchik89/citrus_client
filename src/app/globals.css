@@ -2,10 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+input {
+	min-width: 0;
+}
+
 .small_text {
 	@apply text-center text-sm text-header;
 }
 
 .header__link {
-	@apply lg:text-xs xl:text-base;
+	@apply lg:text-sm xl:text-base capitalize;
+}
+
+.body__blur {
+	backdrop-filter: blur(10px);
+	background: rgba(245, 245, 245, 0.3) !important;
+}
+
+.bg__modal {
+	background: rgba(211, 204, 204, 0.2) !important;
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+}
+
+.icon {
+	@apply w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 fill-icons stroke-icons;
+}
+
+.button__header__wrapper {
+	@apply hover:bg-grayBgHover delay-100 cursor-pointer px-3 py-3;
 }

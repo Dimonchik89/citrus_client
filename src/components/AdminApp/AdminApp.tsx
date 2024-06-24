@@ -1,18 +1,12 @@
 "use client"
-import { ITodo } from "@/interfaces/interfaces"
-import React, { useEffect, useState } from "react"
-import { DropResult } from "@hello-pangea/dnd"
 
-import {
-	Admin,
-	Resource,
-	ListGuesser,
-	EditGuesser,
-	List,
-	useGetList,
-} from "react-admin"
-import jsonServerProvider from "ra-data-json-server"
+import React, { useEffect, useState } from "react"
+
 import DraggableList from "../DragAndDrop/DraggableList"
+import { ITodo } from "@/interfaces/interfaces"
+import { DropResult } from "@hello-pangea/dnd"
+import jsonServerProvider from "ra-data-json-server"
+import { Admin, EditGuesser, List, ListGuesser, Resource, useGetList } from "react-admin"
 
 const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com")
 
@@ -58,12 +52,7 @@ const AdminApp = () => {
 		// 	}}
 		// />
 		<Admin dataProvider={dataProvider}>
-			<Resource
-				name="todos"
-				list={ListGuesser}
-				edit={EditGuesser}
-				recordRepresentation="todos"
-			/>
+			<Resource name="todos" list={ListGuesser} edit={EditGuesser} recordRepresentation="todos" />
 		</Admin>
 	)
 }

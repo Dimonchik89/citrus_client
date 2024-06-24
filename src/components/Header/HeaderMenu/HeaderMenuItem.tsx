@@ -1,10 +1,12 @@
 import React from "react"
-import { Box } from "@chakra-ui/react"
-import Link from "next/link"
+
 import { useTranslations } from "next-intl"
-import useGetLanguage from "@/hooks/useGetLanguage"
+import Link from "next/link"
+
 import HeaderMenuSubMenu from "./HeaderMenuSubMenu"
+import useGetLanguage from "@/hooks/useGetLanguage"
 import { SubMenuItem } from "@/interfaces/interfaces"
+import { Box } from "@chakra-ui/react"
 
 interface HeaderMenuItemProps {
 	href: string

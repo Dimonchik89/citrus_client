@@ -1,7 +1,9 @@
 "use client"
+
 import React, { PropsWithChildren, useRef } from "react"
-import { Provider } from "react-redux"
+
 import store from "../../store/store"
+import { Provider } from "react-redux"
 
 interface ReduxProviderProps extends PropsWithChildren {}
 

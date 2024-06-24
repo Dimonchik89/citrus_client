@@ -1,8 +1,11 @@
 "use client"
+
 import React from "react"
-import { DragDropContext, Droppable, DropResult } from "@hello-pangea/dnd"
-import { ITodo } from "@/interfaces/interfaces" // Вызывала конйликт, не давала устанавливать redux
+
+// Вызывала конйликт, не давала устанавливать redux
 import DraggableField from "./DraggableField"
+import { ITodo } from "@/interfaces/interfaces"
+import { DragDropContext, DropResult, Droppable } from "@hello-pangea/dnd"
 
 interface IDraggableListProps {
 	list: ITodo[]
@@ -17,12 +20,7 @@ interface IDraggableListProps {
 	}
 }
 
-const DraggableList = ({
-	list,
-	onDragEnd,
-	dragListStyle,
-	...props
-}: IDraggableListProps) => {
+const DraggableList = ({ list, onDragEnd, dragListStyle, ...props }: IDraggableListProps) => {
 	console.log("props", props)
 
 	return (
@@ -36,14 +34,7 @@ const DraggableList = ({
 							...(snapshot.isDraggingOver ? dragListStyle : {}),
 						}}
 					>
-						{list?.map((item, index) => (
-							<DraggableField
-								key={item.id}
-								index={index}
-								item={item}
-								{...props}
-							/>
-						))}
+						{list?.map((item, index) => <DraggableField key={item.id} index={index} item={item} {...props} />)}
 						{provided.placeholder}
 					</ul>
 				)}

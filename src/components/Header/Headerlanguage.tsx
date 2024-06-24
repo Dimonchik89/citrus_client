@@ -1,9 +1,11 @@
 "use client"
-import { Box } from "@chakra-ui/react"
-import Link from "next/link"
+
 import React from "react"
-import useGetLanguage from "@/hooks/useGetLanguage"
+
 import { usePathname, useRouter } from "next/navigation"
+
+import useGetLanguage from "@/hooks/useGetLanguage"
+import { Box } from "@chakra-ui/react"
 
 const Headerlanguage = () => {
 	const { currentLanguage } = useGetLanguage()
@@ -45,9 +47,7 @@ const Headerlanguage = () => {
 			<Box
 				onClick={() => changeLanguage("ua")}
 				className={`uppercase header__link cursor-pointer ${
-					currentLanguage !== "ua"
-						? "text-link underline decoration-dotted"
-						: ""
+					currentLanguage !== "ua" ? "text-link underline decoration-dotted" : ""
 				}`}
 			>
 				укр
@@ -55,9 +55,7 @@ const Headerlanguage = () => {
 			<Box
 				onClick={() => changeLanguage("ru")}
 				className={`uppercase header__link cursor-pointer ${
-					currentLanguage !== "ru"
-						? "text-link underline decoration-dotted"
-						: ""
+					currentLanguage !== "ru" ? "text-link underline decoration-dotted" : ""
 				}`}
 			>
 				рус

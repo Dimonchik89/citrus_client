@@ -1,19 +1,18 @@
 "use client"
-import { Button, Text } from "@chakra-ui/react"
-import { Field, Form, Formik } from "formik"
+
 import React from "react"
+
 import HeaderPhoneWindowSuccess from "./HeaderPhoneWindowSuccess"
 import { formatPhone } from "@/services/formatPhone"
+import { Button, Text } from "@chakra-ui/react"
+import { Field, Form, Formik } from "formik"
 
 interface HeaderPhoneWindowFormProps {
 	postPhone: ({ phone }: { phone: string }) => void
 	showPhoneSended: boolean
 }
 
-const HeaderPhoneWindowForm: React.FC<HeaderPhoneWindowFormProps> = ({
-	postPhone,
-	showPhoneSended,
-}) => {
+const HeaderPhoneWindowForm: React.FC<HeaderPhoneWindowFormProps> = ({ postPhone, showPhoneSended }) => {
 	return (
 		<div className="mt-6">
 			<Formik
@@ -37,27 +36,14 @@ const HeaderPhoneWindowForm: React.FC<HeaderPhoneWindowFormProps> = ({
 					resetForm()
 				}}
 			>
-				{({
-					values,
-					errors,
-					touched,
-					handleChange,
-					handleBlur,
-					handleSubmit,
-					isSubmitting,
-					isValid,
-				}) => {
-					const handleKeyDown = (
-						event: React.KeyboardEvent<HTMLInputElement>
-					) => {
+				{({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting, isValid }) => {
+					const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
 						if (event.key === "e" || event.key === "E") {
 							event.preventDefault()
 						}
 					}
 
-					const customHandleChange = (
-						event: React.ChangeEvent<HTMLInputElement>
-					) => {
+					const customHandleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 						handleChange({
 							target: {
 								name: "phone",
@@ -72,8 +58,8 @@ const HeaderPhoneWindowForm: React.FC<HeaderPhoneWindowFormProps> = ({
 						<>
 							<h1>Передзвонити мені</h1>
 							<form onSubmit={handleSubmit}>
-								<div className="border-2 border-gray rounded-3xl h-12 px-4 my-3 outline-none flex items-center">
-									<span className="text-xl">+380</span>
+								<div className="border-2 border-gray rounded-3xl h-10 xl:h-12 px-4 my-3 outline-none flex items-center">
+									<span className="text-base xl:text-xl">+380</span>
 
 									<input
 										type="tel"
@@ -82,25 +68,17 @@ const HeaderPhoneWindowForm: React.FC<HeaderPhoneWindowFormProps> = ({
 										onBlur={handleBlur}
 										value={values.phone}
 										onKeyDown={handleKeyDown}
-										className="outline-none flex-[0_0_70%] w-10 pl-2 text-xl"
+										className="outline-none flex-[0_0_70%] w-10 pl-2 text-base xl:text-xl"
 										autoComplete="off"
 										maxLength={11}
 									/>
 								</div>
 
-								<Text className="text-error text-sm my-2">
-									{errors.phone &&
-										touched.phone &&
-										errors.phone}
-								</Text>
+								<Text className="text-error text-sm my-2">{errors.phone && touched.phone && errors.phone}</Text>
 
 								<Button
 									variant={"lagre_orange"}
-									className={`${
-										values.phone.length < 11
-											? "opacity-30"
-											: "opacity-100 "
-									}`}
+									className={`${values.phone.length < 11 ? "opacity-30" : "opacity-100 "}`}
 									disabled={isSubmitting}
 									type="submit"
 								>

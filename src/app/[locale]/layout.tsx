@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import ProviderChakra from "@/components/Providers/ProviderChakra"
-import ReduxProvider from "@/components/Providers/ReduxProvider"
 import { NextIntlClientProvider } from "next-intl"
 import { getMessages } from "next-intl/server"
+import { Inter } from "next/font/google"
+
 import "../globals.css"
+import ProviderChakra from "@/components/Providers/ProviderChakra"
+import ReduxProvider from "@/components/Providers/ReduxProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 
